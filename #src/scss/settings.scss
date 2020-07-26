@@ -1,0 +1,43 @@
+/*===================== Settings =====================*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+
+/*===================== Vars =====================*/
+$color-trigger: #CE2525;
+$color-black: #212121;
+$color-dark-main: #024178;
+$color-light-main: #1B75BB;
+$color-lighter-main: #2681C9;
+$color-secondary-text: #696969;
+$color-dark-text: #013464;
+$color-borders: #EAEBEC;
+
+/*===================== Mixins =====================*/
+
+@mixin reg-font{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+@mixin light-font{
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+@mixin medium-font{
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+@mixin bold-font{
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}

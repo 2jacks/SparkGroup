@@ -1,0 +1,80 @@
+/*===================== Common =====================*/
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.displayblock {
+  display: block !important;
+}
+
+.button {
+  border: 0 solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+
+  text-align: center;
+  transition: all .1s linear;
+  &:hover {
+    transform: scale(1.06);
+  }
+  @include medium-font();
+  color: #ffffff;
+  &--trigger {
+    background-color: $color-trigger;
+    padding: 1em 2em;
+    @media (max-width: 576px) {
+      padding: 1em 1.5em;
+    }
+  }
+  &--to-cart {
+    background-color: $color-light-main;
+    width: 100%;
+    padding: 1em 0;
+  }
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 1.1em 4.5em;
+
+    font-size: 14px;
+  }
+}
+
+.section-header {
+  @include medium-font();
+  font-size: 24px;
+  color: $color-black;
+  &--white {
+    color: #fff;
+  }
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
+  &--fast-shop {
+    margin-bottom: 35px;
+  }
+  &--why-we {
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+  &--scheme {
+    margin-bottom: 45px;
+  }
+  &--complex {
+    margin-bottom: 47px;
+  }
+  &--certificates {
+    margin-bottom: 40px;
+  }
+  &--contact {
+    margin-bottom: 65px;
+    @media (max-width: 992px) {
+      margin-bottom: 35px;
+    }
+  }
+}
+

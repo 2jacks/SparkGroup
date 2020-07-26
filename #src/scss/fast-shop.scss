@@ -1,0 +1,232 @@
+.fast-shop {
+  margin-bottom: 55px;
+  &__category {
+    margin-top: 55px;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__slider {
+    min-width: 0;
+  }
+}
+.sell-leaders__arrow-place {
+  position: relative;
+  display: flex;
+  .slick {
+    /* Common class for arrows */
+    &-arrow {
+      /* Clean default styles */
+      position: relative;
+      border: 1px solid $color-borders;
+      border-radius: 3px;
+      font-size: 0;
+    }
+
+    &-prev {
+      transform: none;
+      background: url('../img/icons/icons.svg#left-arrow-black') center no-repeat;
+      background-size: 10px 10px;
+      left: auto;
+      top: 0;
+      @media (max-width: 1450px) {
+        right: auto;
+      }
+    }
+
+    &-next {
+      transform: none;
+      background: url('../img/icons/icons.svg#right-arrow-black') center no-repeat;
+      background-size: 10px 10px;
+      right: auto;
+      top: 0;
+
+    }
+  }
+}
+.sales__arrow-place {
+  position: relative;
+  display: flex;
+  .slick {
+    /* Common class for arrows */
+    &-arrow {
+      /* Clean default styles */
+      position: relative;
+      border: 1px solid $color-borders;
+      border-radius: 3px;
+      font-size: 0;
+    }
+
+    &-prev {
+      transform: none;
+      background: url('../img/icons/icons.svg#left-arrow-black') center no-repeat;
+      background-size: 10px 10px;
+      left: auto;
+      top: 0;
+      @media (max-width: 1450px) {
+        right: auto;
+      }
+    }
+
+    &-next {
+      transform: none;
+      background: url('../img/icons/icons.svg#right-arrow-black') center no-repeat;
+      background-size: 10px 10px;
+      right: auto;
+      top: 0;
+
+    }
+  }
+}
+
+.slider__item {
+  margin-right: 20px;
+  min-width: 0;
+}
+
+.shop-item {
+  display: flex;
+  flex-direction: column;
+
+
+  border: 1px solid $color-borders;
+  border-radius: 3px;
+  padding: 20px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+  }
+  &__available {
+    display: flex;
+    align-items: center;
+
+    @include reg-font();
+    font-size: 14px;
+    color: #212121;
+    &--is-available {
+      &:before {
+        content: '';
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #30A14F;
+        margin-right: 5px;
+      }
+    }
+    &--by-order {
+      &:before {
+        content: '';
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #FDD135;
+        margin-right: 5px;
+      }
+    }
+  }
+  &__marker {
+    @include bold-font();
+    font-size: 14px;
+    color: #fff;
+    padding: .3em 1em;
+    border-radius: 3px;
+    &--hit {
+      background-color: #835DB5;
+    }
+    &--sale {
+      background-color: #30A14F;
+    }
+  }
+  &__img {
+    align-self: center;
+    width: 140px;
+    height: 140px;
+
+    margin-bottom: 23px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__name {
+    @include medium-font();
+    font-size: 16px;
+    color: $color-dark-text;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__calc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    margin-top: 45px;
+  }
+  &__cost {
+    @include bold-font();
+    font-size: 22px;
+    color: $color-trigger;
+
+  }
+  &__prev-cost {
+    margin-bottom: -42px;
+    margin-top: 45px;
+
+    @include reg-font();
+    font-size: 14px;
+    color: #929698;
+    text-decoration: line-through;
+  }
+  &__quant {
+    border: 1px solid #C6CACC;
+    border-radius: 3px;
+  }
+  &__fast-buy {
+    @include reg-font();
+    font-size: 14px;
+    color: $color-light-main;
+    text-decoration-style: dashed;
+
+    align-self: center;
+    margin-top: 15px;
+  }
+}
+.quant-field {
+  background-color: #FBFBFB;
+  padding: 0 10px;
+  width: 85px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  &__crement {
+    border: 0;
+    background-color: #FBFBFB;
+    @include bold-font();
+    font-size: 22px;
+    color: #919699;
+  }
+  &__number {
+    @include medium-font();
+    font-size: 16px;
+    color: $color-black;
+    max-width: 30px;
+
+    border: 0;
+    background-color: #FBFBFB;
+    text-align: center;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}

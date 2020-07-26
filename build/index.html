@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"/>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+  <title>SparkGroup</title>
+</head>
+<body>
+<!--Header-->
+<div class="header">
+  <div class="header-pre">
+	<div class="container">
+	  <div class="header-pre__inner">
+		<ul class="header-pre__nav">
+		  <li class="header-pre__nav-item"><a href="">Доставка</a></li>
+		  <li class="header-pre__nav-item"><a href="">Новости</a></li>
+		  <li class="header-pre__nav-item"><a href="">Статьи</a></li>
+		  <li class="header-pre__nav-item"><a href="">Услуги</a></li>
+		</ul>
+
+		<a class="header-pre__order" href="">Принимаем заказы на сайте - круглосуточно!</a>
+
+		<div class="header-pre__city-choose">
+		  <svg class="header-pre__location-marker">
+			<use href="img/icons/icons.svg#location-marker"></use>
+		  </svg>
+		  <p class="header-pre__city-choose-text">Ваш город:
+		  </p>
+		  <span class="header-pre__user-city">Чебоксары</span>
+		</div>
+
+
+		<div class="header-pre__enter">
+		  <svg class="header-pre__user-icon">
+			<use href="img/icons/icons.svg#user"></use>
+		  </svg>
+		  <p class="header-pre__enter-text">Вход / Регистрация</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="header-contact">
+	<div class="container">
+	  <div class="header-contact__inner">
+		<div class="header-logo">
+		  <img alt="Логотип компании СпаркГрупп" class="header-logo__img" src="img/logo.png">
+		</div>
+		<div class="header-contact__schedule">
+		  <p class="header-contact__schedule-title">График работы:</p>
+		  <p class="header-contact__schedule-time">Пн-Пт; с 9:00 до 19:00</p>
+		</div>
+		<div class="header-contact__lang">
+		  <select class="header-contact__lang-select">
+			<option>Ru</option>
+			<option>En</option>
+		  </select>
+
+		</div>
+		<div class="header-contact__callback">
+		  <div class="header-contact__callback-item">
+			<div class="header-contact__callback-number">8 (8352) 38-81-01</div>
+			<a class="header-contact__callback-ref" href="#">pogtex@yandex.ru</a>
+		  </div>
+		  <div class="header-contact__callback-item">
+			<div class="header-contact__callback-number">8 (937) 398-20-01</div>
+			<a class="header-contact__callback-ref" href="#">Заказать звонок</a>
+		  </div>
+		</div>
+		<div class="header-contact__cart">
+		  <svg class="header-contact__cart-icon">
+			<use href="img/icons/icons.svg#shopping-cart"></use>
+		  </svg>
+		  <span class="header-contact__cart-counter">2</span>
+		  <div class="header-contact__cart-info">
+			<p class="header-contact__cart-uppertext">На сумму:</p>
+			<span class="header-contact__cart-sum">11 900 руб.</span>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+  </div>
+  <div class="nav">
+	<div class="container">
+	  <div class="nav__inner">
+		<div class="nav__buttons">
+		  <div class="nav__catalog js-catalog">
+			<svg class="nav__catalog-icon">
+			  <use href="img/icons/icons.svg#catalog-grid"></use>
+			</svg>
+			<p class="nav__catalog-text">Каталог продукции</p>
+			<ul class="nav__catalog-list js-catalog-list">
+			  <li class="nav__catalog-item nav__catalog-item--has-subnav">Противопожарные муфты</li>
+			  <li class="nav__catalog-item nav__catalog-item--has-subnav">Пожарный инвентарь</li>
+			  <li class="nav__catalog-item nav__catalog-item--has-subnav">
+				Пожарная арматура
+				<ul class="nav__catalog-list nav__catalog-subnav">
+				  <li class="nav__catalog-item">Железки</li>
+				  <li class="nav__catalog-item">Квадратки</li>
+				  <li class="nav__catalog-item">Треуголки</li>
+				</ul>
+			  </li>
+			  <li class="nav__catalog-item">Подставки для огнетушителей</li>
+			  <li class="nav__catalog-item">Огнетушители</li>
+			  <li class="nav__catalog-item">Пожарные</li>
+			</ul>
+		  </div>
+		  <ul class="nav__nav">
+			<li><a class="nav__nav-item" href="">О компании</a></li>
+			<li><a class="nav__nav-item" href="">Проекты работ</a></li>
+			<li><a class="nav__nav-item" href="">Оплата</a></li>
+			<li><a class="nav__nav-item" href="">Акции</a></li>
+			<li><a class="nav__nav-item" href="">Контакты</a></li>
+		  </ul>
+		</div>
+		<div class="nav__search">
+		  <form action="" class="nav__search-form">
+			<input class="nav__search-input" type="text">
+			<button class="nav__search-button" type="submit">
+			  <svg class="nav__search-icon">
+				<use href="img/icons/icons.svg#search"></use>
+			  </svg>
+			</button>
+		  </form>
+		</div>
+
+
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="header-mobile">
+
+  <div class="header-mobile__pre">
+	<div class="container">
+	  <div class="header-mobile__pre-inner">
+		<div class="header-pre__city-choose">
+		  <svg class="header-pre__location-marker">
+			<use href="img/icons/icons.svg#location-marker"></use>
+		  </svg>
+		  <p class="header-pre__city-choose-text">Ваш город:
+		  </p>
+		  <span class="header-pre__user-city">Чебоксары</span>
+		</div>
+		<div class="header-mobile__pre-call">
+		  <span class="header-mobile__pre-number">8 (8352) 38-81-01</span>
+		  <span class="header-mobile__pre-number">8 (937) 398-20-01</span>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="header-mobile__nav">
+	<div class="container">
+	  <div class="header-mobile__nav-inner">
+		<div class="header-logo">
+		  <img alt="Логотип компании СпаркГрупп" class="header-logo__img" src="img/logo.png">
+		</div>
+		<div class="burger">
+		  <div class="burger__row"></div>
+		  <div class="burger__row"></div>
+		  <div class="burger__row"></div>
+		</div>
+		<div class="header-mobile__nav-menu">
+		  <ul class="header-mobile__nav-list">
+			<li class="header-mobile__nav-item">
+			  <svg class="header-mobile__nav-icon">
+				<use href="img/icons/icons.svg#user"></use>
+			  </svg>
+			  <a class="header-mobile__nav-link" href="">Вход/Регистрация</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <svg class="header-mobile__nav-icon">
+				<use href="img/icons/icons.svg#catalog-grid"></use>
+			  </svg>
+			  <a class="header-mobile__nav-link" href="">Каталог товаров</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <svg class="header-mobile__nav-icon">
+				<use href="img/icons/icons.svg#shopping-cart"></use>
+			  </svg>
+			  <a class="header-mobile__nav-link" href="">Корзина</a>
+
+			</li>
+		  </ul>
+		  <ul class="header-mobile__nav-list">
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">О компании</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Проекты работ</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Оплата</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Акции</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Контакты</a>
+			</li>
+		  </ul>
+		  <ul class="header-mobile__nav-list">
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Доставка</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Новости</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Статьи</a>
+			</li>
+			<li class="header-mobile__nav-item">
+			  <a class="header-mobile__nav-link" href="">Услуги</a>
+			</li>
+		  </ul>
+		</div>
+
+	  </div>
+	</div>
+  </div>
+</div>
+<!--/Header-->
+<!--Hero-->
+<div class="hero">
+  <div class="hero__inner">
+	<div class="container container-slider">
+	  <div class="hero__slider">
+		<div class="hero__item">
+
+		  <div class="hero__item-wrapper">
+			<div class="hero__info">
+			  <div class="hero__title">Огнетушители и средства пожаротушения по низким ценам</div>
+			  <div class="hero__subtitle">Мы являемся лидерами по производству качественного пожарного оборудования
+			  </div>
+			  <button class="button button--trigger">
+				<span class="hero__button-text">Перейти в каталог</span>
+				<svg class="hero__button-icon">
+				  <use href="img/icons/icons.svg#white-arrow"></use>
+				</svg>
+			  </button>
+			</div>
+
+			<div class="hero__picture">
+			  <img alt="Огнетушители" class="hero__img" src="img/hero/hero-stuff.png">
+			  <div class="hero__circle"></div>
+			</div>
+		  </div>
+
+		</div>
+		<div class="hero__item">
+
+		  <div class="hero__item-wrapper">
+			<div class="hero__info">
+			  <div class="hero__title">Огнетушители и средства пожаротушения по низким ценам</div>
+			  <div class="hero__subtitle">Мы являемся лидерами по производству качественного пожарного оборудования
+			  </div>
+			  <button class="button button--trigger">
+				<span class="hero__button-text">Перейти в каталог</span>
+				<svg class="hero__button-icon">
+				  <use href="img/icons/icons.svg#white-arrow"></use>
+				</svg>
+			  </button>
+			</div>
+
+			<div class="hero__picture">
+			  <img alt="Огнетушители" class="hero__img" src="img/hero/hero-stuff.png">
+			  <div class="hero__circle"></div>
+			</div>
+		  </div>
+
+		</div>
+	  </div>
+	</div>
+	<div class="slider__nav">
+	  <div class="container">
+		<div class="slider__nav-inner"></div>
+	  </div>
+	</div>
+  </div>
+  <div class="hero__benefits">
+	<div class="hero__benefits-item">
+	  <div class="hero__benefits-icon">
+		<img alt="" src="img/hero/benefits/icon1.png">
+	  </div>
+	  <div class="hero__benefits-text">Продукция сертифицирована</div>
+	</div>
+	<div class="hero__benefits-item">
+	  <div class="hero__benefits-icon">
+		<img alt="" src="img/hero/benefits/icon2.png">
+	  </div>
+	  <div class="hero__benefits-text">Гарантия лучшей цены</div>
+	</div>
+	<div class="hero__benefits-item">
+	  <div class="hero__benefits-icon">
+		<img alt="" src="img/hero/benefits/icon3.png">
+	  </div>
+	  <div class="hero__benefits-text">Гибкая
+		система скидок
+	  </div>
+	</div>
+	<div class="hero__benefits-item">
+	  <div class="hero__benefits-icon">
+		<img alt="" src="img/hero/benefits/icon4.png">
+	  </div>
+	  <div class="hero__benefits-text">Быстрые сроки
+		доставки по РФ
+	  </div>
+	</div>
+
+  </div>
+</div>
+<!--/Hero-->
+
+<!--Catalog-->
+<div class="catalog">
+  <div class="container">
+	<div class="catalog__wrapper">
+	  <div class="catalog__header">
+		<div class="section-header section-header--catalog">Противопожарное оборудование</div>
+		<div class="catalog__link-to-full">Полный каталог
+		  <svg class="catalog__link-arrow">
+			<use href="img/icons/icons.svg#blue-arrow"></use>
+		  </svg>
+		</div>
+	  </div>
+	  <div class="catalog__goods">
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">12 товаров</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/mufta.png">
+			</a>
+			<a class="catalog__category" href="#">Противопожарные
+			  муфты
+			</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">30 товаров</div>
+			<div class="catalog__img">
+			  <img alt="" src="img/catalog/inventory.png">
+			</div>
+			<div class="catalog__category">Пожарный инвентарь</div>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">5 товаров</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/armatura.png">
+			</a>
+			<a class="catalog__category" href="#">Пожарная арматура</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">3 товара</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/podstavka.png">
+			</a>
+			<a class="catalog__category" href="#">Подставки
+			  для огнетушителей
+			</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">43 товара</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/ognetush.png">
+			</a>
+			<a class="catalog__category" href="#">Огнетушители</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">61 товар</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/rukav.png">
+			</a>
+			<a class="catalog__category" href="#">Пожарные рукава</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">24 товара</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/shkaf.png">
+			</a>
+			<a class="catalog__category" href="#">Шкафы, щиты, ящики</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">5 товаров</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/spas-obor.png">
+			</a>
+			<a class="catalog__category" href="#">Аварийно-спасательное
+			  оборудование
+			</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__item">
+			<div class="catalog__number">3 товара</div>
+			<a class="catalog__img" href="#">
+			  <img alt="" src="img/catalog/verevki.png">
+			</a>
+			<a class="catalog__category" href="#">Спасательные веревки,
+			  лестницы
+			</a>
+		  </div>
+		</div>
+
+		<div class="catalog__item-wrapper">
+		  <div class="catalog__subscribe">
+			<svg class="catalog__subscribe-icon">
+			  <use href="img/icons/icons.svg#mail"></use>
+			</svg>
+			<p class="catalog__subscribe-header">Подписка на рассылку</p>
+			<p class="catalog__subscribe-text">Будьте всегда в курсе наших специальных предложений!</p>
+			<button class="button button--transparent catalog__subscribe-button">Подписаться</button>
+			<svg class="catalog__subscribe-bgicon">
+			  <use href="img/icons/icons.svg#paperplan"></use>
+			</svg>
+		  </div>
+		</div>
+
+	  </div>
+	  <div class="catalog__offers">
+		<div class="catalog__banner catalog__banner--1">
+		  <div class="catalog__banner-mask"></div>
+
+		  <div class="catalog__banner-info">
+			<div class="catalog__banner-title">Скидка на пожарные
+			  шкафы и щиты
+			</div>
+			<div class="catalog__banner-subtitle">НЗК / НЗБ, НОК / НОБ,
+			  ВЗК / ВЗБ, ВОК / ВОБ
+			</div>
+
+			<div class="catalog__banner-action">
+			  <div class="catalog__banner-action">
+				<div class="catalog__banner-sale">-10%</div>
+				<a class="catalog__banner-link" href="#">Подробнее</a>
+			  </div>
+			</div>
+
+		  </div>
+		  <div class="catalog__banner-picture">
+			<div class="catalog__banner-img">
+			  <img alt="" src="img/catalog/banners/shkaf.png">
+			</div>
+		  </div>
+		</div> <!-- /Первый баннер -->
+		<div class="catalog__banner catalog__banner--2">
+		  <div class="catalog__banner-mask"></div>
+		  <div class="catalog__banner-info">
+			<div class="catalog__banner-title">Связаться с менеджером</div>
+			<div class="catalog__banner-number">8 (937) 398-20-01</div>
+			<div class="catalog__banner-number">8 (8352) 38-81-01</div>
+			<div class="catalog__banner-action">
+			  <button class="button button--trigger">Заказать звонок</button>
+			</div>
+		  </div>
+		  <div class="catalog__banner-picture banner-manager">
+			<div class="catalog__banner-img">
+			  <img alt="" src="img/catalog/banners/manager.png">
+			</div>
+		  </div>
+		</div> <!-- /Второй баннер -->
+	  </div>
+	</div>
+  </div>
+  <!--/Catalog-->
+  <div class="popular">
+	<div class="container">
+	  <div class="popular__wrapper">
+		<div class="popular__header">
+		  <div class="section-header section-header--white">Противопожарное оборудование</div>
+		  <a class="popular__link-to-full" href="#">Полный каталог</a>
+		</div>
+		<div class="popular__content">
+
+		  <div class="popular__item">
+			<a class="popular__name" href="#">Ведро пожарное</a>
+			<a class="popular__img" href="#">
+			  <img alt="" src="img/popular/1.png">
+			</a>
+		  </div>
+
+		  <div class="popular__item">
+			<a class="popular__name" href="#">Огнетушители</a>
+			<a class="popular__img" href="#">
+			  <img alt="" src="img/popular/2.png">
+			</a>
+		  </div>
+
+		  <div class="popular__item">
+			<a class="popular__name" href="#">Перчатки
+			  диэлектрические</a>
+			<a class="popular__img" href="#">
+			  <img alt="" src="img/popular/3.png">
+			</a>
+		  </div>
+
+		  <div class="popular__item">
+			<a class="popular__name" href="#">Лопата штыковая</a>
+			<a class="popular__img" href="#">
+			  <img alt="" src="img/popular/4.png">
+			</a>
+		  </div>
+		  <div class="popular__item">
+			<a class="popular__name" href="#">Лопата совковая</a>
+			<a class="popular__img" href="#">
+			  <img alt="" src="img/popular/5.png">
+			</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+<!--/Catalog-->
+
+<!--Fast shop-->
+<div class="fast-shop">
+  <div class="container">
+	<div class="fast-shop__category sell-leaders">
+	  <div class="fast-shop__category-header">
+		<h2 class="section-header section-header--fast-shop">Лидеры продаж</h2>
+		<div class="sell-leaders__arrow-place"></div>
+	  </div>
+	  <div class="fast-shop__slider slider">
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--is-available">В наличии</span>
+			  <span class="shop-item__marker shop-item__marker--hit">Хит</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/ognetush.png">
+			</div>
+			<a class="shop-item__name" href="#">Огнетушитель ОП-4 (з) ABCE</a>
+			<div class="shop-item__calc">
+			  <span class="shop-item__cost">540 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--is-available">В наличии</span>
+			  <span class="shop-item__marker shop-item__marker--hit">Хит</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/ognetush.png">
+			</div>
+			<a class="shop-item__name" href="#">Огнетушитель ОП-4 (з) ABCE</a>
+			<div class="shop-item__calc">
+			  <span class="shop-item__cost">540 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--is-available">В наличии</span>
+			  <span class="shop-item__marker shop-item__marker--hit">Хит</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/ognetush.png">
+			</div>
+			<a class="shop-item__name" href="#">Огнетушитель ОП-4 (з) ABCE</a>
+			<div class="shop-item__calc">
+			  <span class="shop-item__cost">540 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--is-available">В наличии</span>
+			  <span class="shop-item__marker shop-item__marker--hit">Хит</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/ognetush.png">
+			</div>
+			<a class="shop-item__name" href="#">Огнетушитель ОП-4 (з) ABCE</a>
+			<div class="shop-item__calc">
+			  <span class="shop-item__cost">540 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--is-available">В наличии</span>
+			  <span class="shop-item__marker shop-item__marker--hit">Хит</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/ognetush.png">
+			</div>
+			<a class="shop-item__name" href="#">Огнетушитель ОП-4 (з) ABCE</a>
+			<div class="shop-item__calc">
+			  <span class="shop-item__cost">540 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--is-available">В наличии</span>
+			  <span class="shop-item__marker shop-item__marker--hit">Хит</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/ognetush.png">
+			</div>
+			<a class="shop-item__name" href="#">Огнетушитель ОП-4 (з) ABCE</a>
+			<div class="shop-item__calc">
+			  <span class="shop-item__cost">540 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--is-available">В наличии</span>
+			  <span class="shop-item__marker shop-item__marker--hit">Хит</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/ognetush.png">
+			</div>
+			<a class="shop-item__name" href="#">Огнетушитель ОП-4 (з) ABCE</a>
+			<div class="shop-item__calc">
+			  <span class="shop-item__cost">540 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="fast-shop__category sales">
+	  <div class="fast-shop__category-header">
+		<h2 class="section-header section-header--fast-shop">Товары со скидкой</h2>
+		<div class="sales__arrow-place"></div>
+	  </div>
+	  <div class="fast-shop__slider slider2">
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+		<div class="slider__item">
+		  <div class="fast-shop__item shop-item">
+			<div class="shop-item__header">
+			  <span class="shop-item__available shop-item__available--by-order">Под заказ</span>
+			  <span class="shop-item__marker shop-item__marker--sale">Скидка</span>
+			</div>
+			<div class="shop-item__img">
+			  <img alt="" src="img/fast-shop/shkaf.png">
+			</div>
+			<a class="shop-item__name" href="#">Шкаф пожарный ШПК 310 НЗК/НЗБ</a>
+			<span class="shop-item__prev-cost">1300 руб.</span>
+			<div class="shop-item__calc">
+
+			  <span class="shop-item__cost">1251 руб.</span>
+			  <div class="shop-item__quant quant-field">
+				<button class="quant-field__crement dec" type="button" value="-">-</button>
+				<input class="quant-field__number" min="0" step="1" type="number" value="1">
+				<button class="quant-field__crement inc" type="button" value="+">+</button>
+			  </div>
+			</div>
+			<button class="button button--to-cart">В корзину</button>
+			<a class="shop-item__fast-buy" href="">Купить в один клик</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+  </div>
+
+</div>
+<!--/Fast shop-->
+
+<!--About-->
+<div class="about">
+  <div class="container">
+	<div class="about__why-we why-we">
+	  <div class="why-we__content">
+		<div class="section-header section-header--why-we">Почему мы</div>
+		<p class="why-we__text">«Спаркгрупп» молодая и динамично развивающая торгово-сервисная компания на рынке
+		  противопожарного оборудования. Мы предлагаем к поставкам широкий ассортимент пожарного оборудования в
+		  наличии на складе. Продажа осуществляется оптом и в розницу.</p>
+		<p class="why-we__text">Предоставляем весь спектр услуг в области пожарной безопасности согласно лицензии МЧС. Комплектуем заказы
+		  средств пожаротушения любой сложности с доставкой по Чебоксарам, а так же в районы Чувашской Республики. Вся продукция снабжена сертификатами, соответствующей документацией и паспортами.</p>
+	  </div>
+	  <div class="why-we__photo">
+		<img alt="" src="img/about/photo.jpg">
+	  </div>
+
+	</div>
+	<div class="about__advantages advantages">
+	  <div class="advantages__item">
+		<div class="advantages__picture">
+		  <img src="img/about/advantages/icon1.png" alt="">
+		</div>
+		<div class="advantages__content">
+		  <h3 class="advantages__title">Опыт работы</h3>
+		  <div class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+	  </div>
+	  <div class="advantages__item">
+		<div class="advantages__picture">
+		  <img src="img/about/advantages/icon2.png" alt="">
+		</div>
+		<div class="advantages__content">
+		  <h3 class="advantages__title">Низкие цены</h3>
+		  <div class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+	  </div>
+	  <div class="advantages__item">
+		<div class="advantages__picture">
+		  <img src="img/about/advantages/icon3.png" alt="">
+		</div>
+		<div class="advantages__content">
+		  <h3 class="advantages__title">Качество товара</h3>
+		  <div class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+	  </div>
+	</div>
+	<div class="about__scheme scheme">
+	  <h2 class="section-header section-header--scheme">Схема работы с нами</h2>
+	  <div class="scheme__plan">
+		<div class="scheme__item scheme__item--1">
+		  <div class="scheme__item-header">
+			<div class="scheme__number">
+			  <img src="img/about/scheme/1.png" alt="">
+			</div>
+			<h3 class="scheme__title">Оформление заказа</h3>
+		  </div>
+		  <p class="scheme__text">Вы можете оформить заказ на нашем сайте или по телефону горячей линии.</p>
+		</div>
+		<div class="scheme__item scheme__item--2">
+		  <div class="scheme__item-header">
+			<div class="scheme__number">
+			  <img src="img/about/scheme/2.png" alt="">
+			</div>
+			<h3 class="scheme__title">Оплата</h3>
+		  </div>
+		  <p class="scheme__text">Оплатить заказ можно онлайн на сайте, а также курьеру картой или наличными.</p>
+		</div>
+		<div class="scheme__item scheme__item--3">
+		  <div class="scheme__item-header">
+			<div class="scheme__number">
+			  <img src="img/about/scheme/3.png" alt="">
+			</div>
+			<h3 class="scheme__title">Сборка</h3>
+		  </div>
+		  <p class="scheme__text">После того как заказ оформлен, мы начинаем сборку ваших товаров.</p>
+		</div>
+		<div class="scheme__item scheme__item--4">
+		  <div class="scheme__item-header">
+			<div class="scheme__number">
+			  <img src="img/about/scheme/4.png" alt="">
+			</div>
+			<h3 class="scheme__title">Доставка</h3>
+		  </div>
+		  <p class="scheme__text">Далее передаем заказ в службу доставки, которая доставит ваш заказ.</p>
+		</div>
+
+	  </div>
+	</div>
+  </div>
+
+</div>
+<!--/About-->
+
+<!--Sliders-->
+<div class="complex">
+  <div class="container">
+	<h2 class="section-header section-header--complex">Комплексные решения</h2>
+	<div class="complex__content">
+	  <span class="complex__item">Для серверных комнат и ЦОД</span>
+	  <span class="complex__item">Для вентиляционных камер</span>
+	  <span class="complex__item">Для станций связи</span>
+	  <span class="complex__item">Для архива</span>
+	  <span class="complex__item">Для гаражей</span>
+	  <span class="complex__item">Для машинных залов</span>
+	  <span class="complex__item">Для библиотеки</span>
+	  <span class="complex__item">Для магазинов и торговых центров</span>
+	  <span class="complex__item">Для автосервисов и СТО</span>
+	  <span class="complex__item">Для дизель-генераторных установок ДГУ</span>
+	  <span class="complex__item">Для музея</span>
+	  <span class="complex__item">Для стоянок и паркингов</span>
+	  <span class="complex__item">Для банковских хранилищ</span>
+	  <span class="complex__item">Для складов</span>
+	  <span class="complex__item">Для блок-контейнеров</span>
+	</div>
+  </div>
+</div>
+
+<div class="certificates">
+  <div class="container">
+	<div class="certificates__wrapper">
+	  <div class="certificates__header">
+		<h2 class="section-header section-header--certificates">Наши сертификаты</h2>
+		<div class="certificates__arrows"></div>
+	  </div>
+	  <div class="certificates-slider">
+		<div class="certificates-slider__wrapper">
+		  <div class="certificates-slider__item">
+			<div class="certificates-slider__img">
+			  <img src="img/certificates/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+		<div class="certificates-slider__wrapper">
+		  <div class="certificates-slider__item">
+			<div class="certificates-slider__img">
+			  <img src="img/certificates/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+		<div class="certificates-slider__wrapper">
+		  <div class="certificates-slider__item">
+			<div class="certificates-slider__img">
+			  <img src="img/certificates/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+		<div class="certificates-slider__wrapper">
+		  <div class="certificates-slider__item">
+			<div class="certificates-slider__img">
+			  <img src="img/certificates/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+		<div class="certificates-slider__wrapper">
+		  <div class="certificates-slider__item">
+			<div class="certificates-slider__img">
+			  <img src="img/certificates/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+		<div class="certificates-slider__wrapper">
+		  <div class="certificates-slider__item">
+			<div class="certificates-slider__img">
+			  <img src="img/certificates/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+		<div class="certificates-slider__wrapper">
+		  <div class="certificates-slider__item">
+			<div class="certificates-slider__img">
+			  <img src="img/certificates/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+
+
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="partners">
+  <div class="container">
+	<div class="partners__wrapper">
+	  <div class="partners__header">
+		<h2 class="section-header section-header--white section-header--partners">С нами сотрудничают крупнейшие компании</h2>
+		<div class="partners__arrows"></div>
+	  </div>
+	  <div class="partners-slider">
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/sberbank.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/lukoil.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/magnit.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/lenta.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/rjd.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/sberbank.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/lukoil.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/magnit.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/lenta.png" alt="">
+		  </div>
+		</div>
+		<div class="partners-slider__wrapper">
+		  <div class="partners-slider__item">
+			<img src="img/partners/rjd.png" alt="">
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+<!--/Sliders-->
+
+<!--News-->
+<div class="news">
+  <div class="container">
+	<div class="news__header">
+	  <h2 class="section-header section-header--news">Новости компании</h2>
+	  <a href="" class="news__all">Все новости
+	  	<svg class="news__link-arrow">
+		  <use href="img/icons/icons.svg#blue-arrow"></use>
+		</svg>
+	  </a>
+	</div>
+	<div class="news__content">
+
+	  <article class="news__item">
+		<div class="news__img">
+		  <img src="img/news/1.jpg" alt="">
+		</div>
+		<div class="news__desc">
+		  <span class="news__date">15 мая 2020</span>
+		  <h3 class="news__title">Как сделать офисное помещение пожаробезопасным?</h3>
+		  <p class="news__text">По действующему законодательству страны, вне зависимости от размеров офисного помещения, его собственник обязан разместить средства для ликвидации пожара.</p>
+		  <a href="" class="news__full-article">Подробнее</a>
+		</div>
+	  </article>
+
+	  <article class="news__item">
+		<div class="news__img">
+		  <img src="img/news/1.jpg" alt="">
+		</div>
+		<div class="news__desc">
+		  <span class="news__date">15 мая 2020</span>
+		  <h3 class="news__title">Как сделать офисное помещение пожаробезопасным?</h3>
+		  <p class="news__text">По действующему законодательству страны, вне зависимости от размеров офисного помещения, его собственник обязан разместить средства для ликвидации пожара.</p>
+		  <a href="" class="news__full-article">Подробнее</a>
+		</div>
+	  </article>
+
+	  <article class="news__item">
+		<div class="news__img">
+		  <img src="img/news/1.jpg" alt="">
+		</div>
+		<div class="news__desc">
+		  <span class="news__date">15 мая 2020</span>
+		  <h3 class="news__title">Как сделать офисное помещение пожаробезопасным?</h3>
+		  <p class="news__text">По действующему законодательству страны, вне зависимости от размеров офисного помещения, его собственник обязан разместить средства для ликвидации пожара.</p>
+		  <a href="" class="news__full-article">Подробнее</a>
+		</div>
+	  </article>
+
+	  <article class="news__item">
+		<div class="news__img">
+		  <img src="img/news/1.jpg" alt="">
+		</div>
+		<div class="news__desc">
+		  <span class="news__date">15 мая 2020</span>
+		  <h3 class="news__title">Как сделать офисное помещение пожаробезопасным?</h3>
+		  <p class="news__text">По действующему законодательству страны, вне зависимости от размеров офисного помещения, его собственник обязан разместить средства для ликвидации пожара.</p>
+		  <a href="" class="news__full-article">Подробнее</a>
+		</div>
+	  </article>
+	</div>
+  </div>
+</div>
+<!--/News-->
+
+<!--Contact-->
+<div class="contact">
+  <div class="container container--contact">
+
+	  <div class="contact__form">
+		<h2 class="section-header section-header--white section-header--contact">Связаться с нами</h2>
+		<form action="">
+		  <input class="contact__input" type="text" placeholder="Ваше имя">
+		  <input class="contact__input" type="text" placeholder="Ваш телефон">
+		  <input class="contact__input" type="text" placeholder="Ваш e-mail">
+		  <textarea class="contact__textarea" name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+		  <div class="contact__send">
+			<button class="button button--trigger" type="submit">Отправить</button>
+			<div class="contact__checkbox">
+			  <input class="contact__permission-check" id="data-permission" type="checkbox">
+			  <label class="contact__permission-label" for="data-permission">Я согласен с политикой
+				<a href="">обработки персональных данных</a></label>
+			</div>
+		  </div>
+		</form>
+	  </div>
+
+	  <div class="contact__info contact-info">
+		<div class="contact-info__wrapper">
+		  <div class="contact-info__info">
+
+			<div class="contact-info__item">
+			  <div class="contact-info__icon">
+				<img src="img/contacts/phone.png" alt="">
+			  </div>
+			  <strong class="contact-info__text">8 (8352) 38-81-01;       8 (937) 398-20-01</strong>
+			</div>
+
+			<div class="contact-info__item">
+			  <div class="contact-info__icon">
+				<img src="img/contacts/mail.png" alt="">
+			  </div>
+			  <a href="#" class="contact-info__link">pogtex@yandex.ru</a>
+			</div>
+
+			<div class="contact-info__item">
+			  <div class="contact-info__icon">
+				<img src="img/contacts/location.png" alt="">
+			  </div>
+			  <strong class="contact-info__text">г. Канаш, ул. Чернышевского 2а</strong>
+			</div>
+
+			<div class="contact-info__item">
+			  <div class="contact-info__icon">
+				<img src="img/contacts/clock.png" alt="">
+			  </div>
+			  <strong class="contact-info__text">Пн-Пт; с 9:00 до 19:00</strong>
+			</div>
+		  </div>
+		  <div class="contact-info__map">
+			<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2259.3839990719534!2d47.51934151624425!3d55.508258780488724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415b9e1737acc449%3A0x25aa921ffcabcaad!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4sIDLQsCwg0JrQsNC90LDRiCwg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI5MzMw!5e0!3m2!1sru!2sru!4v1595334783892!5m2!1sru!2sru" width="100%" height="600px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		  </div>
+		</div>
+	  </div>
+
+  </div>
+
+</div>
+<!--/Contact-->
+
+
+<footer class="footer">
+	<div class="container">
+	  <div class="footer__wrapper">
+		<div class="footer__col">
+		  <div class="footer__logo">
+			<img  src="img/logo.png" alt="">
+		  </div>
+		  <span class="footer__copyright">	&#169; 2020 Спаркгрупп. Все права защищены</span>
+		  <div class="footer__social social">
+			<a class="social__item" href="#">
+			  <img src="img/footer/vk.png" alt="" class="">
+			</a>
+			<a class="social__item" href="#">
+			  <img src="img/footer/instagram.png" alt="" class="">
+			</a>
+			<a class="social__item" href="#">
+			  <img src="img/footer/facebook.png" alt="" class="">
+			</a>
+		  </div>
+		</div>
+		<div class="footer__col footer-nav">
+		  <div class="footer-col">
+			<div class="footer-col__title">
+			  <h2 class="footer-col__header">Меню</h2>
+			  <svg class="footer-col__arrow">
+				<use href="img/icons/icons.svg#lang-arrow"></use>
+			  </svg>
+			</div>
+			<div class="footer-col__nav-wrapper">
+			  <nav class="footer-col__nav">
+				<a class="footer-col__link" href="#">О компании</a>
+				<a class="footer-col__link" href="#">Проекты работ</a>
+				<a class="footer-col__link" href="#">Оплата</a>
+				<a class="footer-col__link" href="#">Акции</a>
+				<a class="footer-col__link" href="#">Контакты</a>
+			  </nav>
+			</div>
+		  </div>
+		  <div class="footer-col">
+			<div class="footer-col__title">
+			  <h2 class="footer-col__header">Сервис</h2>
+			  <svg class="footer-col__arrow">
+				<use href="img/icons/icons.svg#lang-arrow"></use>
+			  </svg>
+			</div>
+			<div class="footer-col__nav-wrapper">
+			  <nav class="footer-col__nav">
+				<a class="footer-col__link" href="#">Доставка</a>
+				<a class="footer-col__link" href="#">Новости</a>
+				<a class="footer-col__link" href="#">Статьи</a>
+				<a class="footer-col__link" href="#">Услуги</a>
+			  </nav>
+			</div>
+		  </div>
+		  <div class="footer-col">
+			<div class="footer-col__title">
+			  <h2 class="footer-col__header">Каталог</h2>
+			  <svg class="footer-col__arrow">
+				<use href="img/icons/icons.svg#lang-arrow"></use>
+			  </svg>
+			</div>
+			<div class="footer-col__nav-wrapper">
+			  <nav class="footer-col__nav">
+				<a class="footer-col__link" href="#">Противорожарные муфты</a>
+				<a class="footer-col__link" href="#">Пожарный инвентарь</a>
+				<a class="footer-col__link" href="#">Пожарная арматура</a>
+				<a class="footer-col__link" href="#">Огнетушители</a>
+				<a class="footer-col__link" href="#">Пожарные рукава</a>
+			  </nav>
+			</div>
+
+		  </div>
+		</div>
+		<div class="footer__col">
+		  <a href="#" class="footer__number">8 (937) 398-20-01</a>
+		  <a href="#" class="footer__number">8 (8352) 38-81-01</a>
+		  <span class="footer__address">г. Канаш,
+ул. Чернышевского 2а</span>
+		  <a href="" class="footer__email">pogtex@yandex.ru</a>
+		  <span class="footer__schedule">Пн-Пт с 9:00 до 19:00</span>
+		</div>
+
+	  </div>
+	</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
