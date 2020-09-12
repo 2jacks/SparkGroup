@@ -2,7 +2,7 @@
   &-logo {
     width: 280px;
     margin-right: 10px;
-    z-index: 10;
+    z-index: 1000;
     &__img {
       width: 100%;
       height: auto;
@@ -61,6 +61,7 @@
     &__city-choose {
       display: flex;
       align-items: center;
+      z-index: 1000;
 
     }
     &__location-marker {
@@ -308,12 +309,21 @@
 
         background-color: $color-light-main;
         border-bottom: 1px solid #EAEBEC;
+        a {
+          @include medium-font();
+          font-size: 14px;
+          color: #fff;
+          text-decoration: none;
+        }
         &:last-child {
           border-bottom: none;
         }
         &:hover{
           background-color: #F0F4F8;
           color: $color-dark-text;
+          a {
+            color: $color-dark-text;
+          }
         }
 
         &--has-subnav {
@@ -339,8 +349,8 @@
       }
       &-subnav {
         position: absolute;
-        left: 100% !important;
-        top: 0 !important;
+        left: 100%;
+        top: -1px;
 
       }
     }
@@ -440,7 +450,7 @@
 }
 
 body {
-  .lock {
+  &.lock {
     overflow: hidden;
   }
 }
@@ -463,17 +473,29 @@ body {
     background-color: #fff;
     box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.29);
   }
-  
+
   &__pre {
+    height: 40px;
+    position: relative;
+    z-index: 10000;
     background-color: #F0F4F8;
-    padding: 5px 0;
+    display: flex;
+    align-items: center;
     &-inner {
+      height: 40px;
       display: flex;
       justify-content: space-between;
+      z-index: 100;
     }
     &-call {
       display: flex;
-
+      align-items: center;
+      z-index: 1000;
+      @media (max-width: 575.98px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
     }
     &-number {
       @include bold-font();
@@ -481,15 +503,19 @@ body {
       color: $color-black;
 
       display: flex;
+      align-items: center;
       margin-right: 5px;
       &:after {
         content: '';
         display: block;
         width: 2px;
-        height: 90%;
+        height: 20px;
         margin-left: 5px;
 
         background-color: $color-borders;
+        @media (max-width: 575.98px) {
+          display: none;
+        }
       }
       &:last-child {
         &:after {
@@ -499,25 +525,30 @@ body {
     }
   }
   &__nav {
-    padding: 10px 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
 
     position: relative;
     z-index: 1000;
     &-inner {
+      height: 70px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     &-menu {
-      position: absolute;
-      top: 0;
+      position: fixed;
+      top: -100%;
       left: 0;
       z-index: 0;
       width: 100%;
       height: 100vh;
+      overflow: auto;
 
-      padding: 67px 10px 0 10px;
+      padding: 110px 10px 0 10px;
       background-color: $color-light-main;
+      transition: all .3s linear;
     }
     &-list {
       list-style: none;
@@ -534,7 +565,12 @@ body {
         background-color: $color-borders;
         border-radius: 2px;
       }
-
+      &:first-child {
+        padding-top: 20px;
+        &:before {
+          display: none;
+        }
+      }
     }
     &-item {
       margin-bottom: 15px;
@@ -562,24 +598,51 @@ body {
 }
 
 .burger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  width: 40px;
-  height: 30px;
-  z-index: 10;
-  &__row {
+  display: none;
+  @media (max-width: 991.98px) {
     display: block;
-    width: 100%;
-    height: 5px;
-    background-color: $color-light-main;
-    &--active {
-      background-color: #fff;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 1000;
+    span {
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      position: absolute;
+
+      background-color: $color-light-main;
+      transition: all .2s linear;
+    }
+    &::before, &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+
+      background-color: $color-light-main;
+      transition: all .2s linear;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &.active::before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    &.active span {
+      transform: scale(0);
+    }
+    &.active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
     }
   }
 }
-
 @media (max-width: 1200px) {
   .header {
     &-logo {
@@ -599,18 +662,45 @@ body {
   }
 }
 
-@media (max-width: 872px) {
+@media (max-width: 972px) {
   .header {
     display: none;
   }
   .header-mobile {
     display: flex;
-    &__nav-menu {
-      display: none;
-      &--visible {
+    &__nav {
+      position: relative;
+      &:before {
+        content: '';
         display: block;
+        height: 70px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+      &-menu {
+        &.active {
+          top: 0;
+        }
       }
     }
+    &__pre {
+      &:before {
+        content: '';
+        display: block;
+        height: 30px;
+        width: 100%;
+        background-color: #F0F4F8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+    }
+
   }
 }
 

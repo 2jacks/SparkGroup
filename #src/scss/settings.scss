@@ -8,6 +8,12 @@
   &:focus {
     outline: none;
   }
+  &:active {
+    outline: none;
+  }
+}
+p {
+  line-height: 1.5;
 }
 
 /*===================== Vars =====================*/

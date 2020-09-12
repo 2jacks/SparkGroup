@@ -3,8 +3,8 @@
   max-width: 1200px;
   padding: 0 20px;
   width: 100%;
-  margin: 0 auto;
   height: 100%;
+  margin: 0 auto;
 }
 
 .displayblock {
@@ -42,17 +42,28 @@
 
     font-size: 14px;
   }
+  &--filter {
+    background-color: $color-light-main;
+    @include reg-font();
+    font-size: 14px;
+    color: #fff;
+
+    width: 100%;
+    height: 45px;
+  }
 }
 
 .section-header {
   @include medium-font();
   font-size: 24px;
   color: $color-black;
+  margin-bottom: 35px;
   &--white {
     color: #fff;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 575.98px) {
     font-size: 16px;
+    margin-bottom: 20px;
   }
   &--fast-shop {
     margin-bottom: 35px;

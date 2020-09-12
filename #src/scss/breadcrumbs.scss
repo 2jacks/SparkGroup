@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  &__level {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    @include reg-font();
+    font-size: 14px;
+    color: #919699;
+    &:before {
+      content: '';
+      display: block;
+      background: url("../img/icons/right-arrow-black.svg") center no-repeat;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+    &--current {
+      color: $color-black;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

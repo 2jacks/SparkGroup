@@ -1,0 +1,17 @@
+.catalog-page{
+  &__content {
+    @media (max-width: 872px) {
+      margin-top: 130px;
+    }
+  }
+  &__catalog {
+    padding: 0 0 55px 0;
+    @media (max-width: 767.98px) {
+      padding: 0 0 45px 0;
+    }
+    @media (max-width: 575.98px) {
+      padding: 0 0 35px 0;
+    }
+  }
+
+}

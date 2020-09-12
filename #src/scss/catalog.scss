@@ -11,12 +11,16 @@
     @include medium-font();
     font-size: 14px;
     color: $color-light-main;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
 
     cursor: pointer;
     white-space: nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &__link-arrow {
     width: 10px;
@@ -43,6 +47,20 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    position: relative;
+    &:hover {
+      .catalog__category {
+        text-decoration: underline;
+      }
+    }
+
+  }
+  &__big-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 
   }
   &__number {

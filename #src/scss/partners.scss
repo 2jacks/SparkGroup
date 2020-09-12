@@ -1,6 +1,14 @@
 .partners {
   background-color: #013464;
   padding: 145px 0 65px 0;
+  &-slider__item {
+    img {
+      position: relative;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
   &__header {
     display: flex;
     justify-content: space-between;

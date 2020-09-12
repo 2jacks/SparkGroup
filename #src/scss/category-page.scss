@@ -1,0 +1,123 @@
+.category-page {
+  margin-bottom: 60px;
+  @media (max-width: 872px) {
+    margin-top: 130px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__sortby {
+    display: flex;
+
+    span {
+      @include reg-font();
+      font-size: 14px;
+      color: $color-black;
+      margin-right: 5px;
+    }
+  }
+  &__sort-button {
+    @include medium-font();
+    font-size: 14px;
+    color: $color-light-main;
+    display: flex;
+    align-items: center;
+    text-decoration-style: dashed;
+    &:after {
+      content: url("../img/icons/icons.svg#lang-arrow");
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+  }
+  &__filter {
+    width: 24.5%;
+    min-width: 280px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    @media (max-width: 767.98px) {
+      width: 100%;
+      min-width: auto;
+      margin-bottom: 40px;
+    }
+  }
+  &__rightside {
+    width: 74%;
+    flex-shrink: 1;
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
+  }
+  &__shop {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__shop-item {
+    width: 32%;
+    margin-bottom: 20px;
+    @media (max-width: 991.98px) {
+      width: 49%;
+    }
+    @media (max-width: 575.98px) {
+      width: 100%;
+    }
+  }
+}
+.pagination {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  &__prev {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/icons/left-arrow-black.svg");
+
+    border: none;
+
+  }
+  &__next {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/icons/right-arrow-black.svg");
+
+    border: none;
+
+  }
+  &__page {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+
+    border: 1px solid $color-borders;
+    border-radius: 3px;
+    background-color: #FBFBFB;
+
+    @include reg-font();
+    font-size: 16px;
+    color: $color-black;
+    &--current {
+      background-color: $color-light-main;
+      color: #fff;
+      border-color: $color-light-main;
+    }
+  }
+}
